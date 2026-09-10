@@ -96,16 +96,6 @@ xgboost
 thop
 ```
 
-##  Results
-
-_Add your final numbers here after running the notebook, e.g.:_
-
-| Model | Accuracy (%) | F1-Score (%) |
-|---|---|---|
-| ResNet50 | — | — |
-| EfficientNet-B0 | — | — |
-| ... | | |
-
 ##  License
 
 This project is for academic/educational purposes as part of a Computer Vision lab assignment. Dataset used under its original Kaggle license.
