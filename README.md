@@ -54,15 +54,6 @@ Deep features (2048-D) extracted from the fine-tuned **ResNet50**, standardized,
 ### Table 3 — Computational Efficiency
 For each backbone: parameter count (M), model size on disk (MB), FLOPs (G), and average inference time per image (ms), alongside its Table 1 accuracy.
 
-##  Evaluation Metrics
-
-All models are evaluated on the validation set using:
-- Accuracy (%)
-- Precision (%) — macro-averaged
-- Recall (%) — macro-averaged
-- F1-Score (%) — macro-averaged
-- AUC (%) — macro-averaged, one-vs-rest
-
 ##  Repository Structure
 
 ```
