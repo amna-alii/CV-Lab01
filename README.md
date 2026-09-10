@@ -3,7 +3,7 @@
 
 This repository contains the implementation for a Computer Vision lab task comparing **transfer learning models**, **classical classifiers on deep features**, and **computational efficiency** for multi-class skin lesion classification.
 
-## 📌 Task Overview
+##  Task Overview
 
 Using a subset of a skin disease image dataset, this project addresses three sub-tasks:
 
@@ -11,7 +11,7 @@ Using a subset of a skin disease image dataset, this project addresses three sub
 2. **Classifier Comparison on Deep Features** — Extract deep features from a fine-tuned CNN and train 7 classical machine learning classifiers on top of them.
 3. **Computational Efficiency Comparison** — Compare the same backbones on parameter count, model size, FLOPs, and inference speed.
 
-## 🩺 Dataset
+##  Dataset
 
 - **Source:** [Skin Disease Classification Image Dataset (Kaggle)](https://www.kaggle.com/datasets/riyaelizashaju/skin-disease-classification-image-dataset)
 - **Classes used (5 of 9 available):**
@@ -41,7 +41,7 @@ Split_smol/
 
 > The raw dataset zip is not included in this repo due to size/licensing — download it from the Kaggle link above and place it as described in [Usage](#-usage).
 
-## 🧠 Methods
+##  Methods
 
 ### Table 1 — Transfer Learning Models
 Pretrained (ImageNet) backbones fine-tuned end-to-end with a new classification head for 5 classes:
@@ -54,7 +54,7 @@ Deep features (2048-D) extracted from the fine-tuned **ResNet50**, standardized,
 ### Table 3 — Computational Efficiency
 For each backbone: parameter count (M), model size on disk (MB), FLOPs (G), and average inference time per image (ms), alongside its Table 1 accuracy.
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 All models are evaluated on the validation set using:
 - Accuracy (%)
@@ -63,7 +63,7 @@ All models are evaluated on the validation set using:
 - F1-Score (%) — macro-averaged
 - AUC (%) — macro-averaged, one-vs-rest
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -72,7 +72,7 @@ All models are evaluated on the validation set using:
 └── README.md
 ```
 
-## 🚀 Usage
+##  Usage
 
 1. Open `Skin_Lesion_Classification_Lab.ipynb` in [Google Colab](https://colab.research.google.com/).
 2. Set **Runtime → Change runtime type → GPU (T4)**.
@@ -82,7 +82,7 @@ All models are evaluated on the validation set using:
    - All three tables are trained, evaluated, printed, and exported as CSV files.
 4. Copy the generated CSV values into the corresponding tables in `Task_01.docx`, or place the CSVs in `results/` in this repo.
 
-## 🛠️ Requirements
+##  Requirements
 
 Installed automatically inside the notebook (Colab already has most of these):
 
@@ -96,7 +96,7 @@ xgboost
 thop
 ```
 
-## 📈 Results
+##  Results
 
 _Add your final numbers here after running the notebook, e.g.:_
 
@@ -106,6 +106,6 @@ _Add your final numbers here after running the notebook, e.g.:_
 | EfficientNet-B0 | — | — |
 | ... | | |
 
-## 📄 License
+##  License
 
 This project is for academic/educational purposes as part of a Computer Vision lab assignment. Dataset used under its original Kaggle license.
